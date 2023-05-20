@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,38 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather App</title>
 </head>
+
 <body>
+    <header>
+        <h1>Aplikacja pogodowa</h1>
+    </header>
+    <main>
+        <div class="app_top">
+            <input type="text" placeholder="Nazwa miasta">
+            <button>Sprawdź pogodę</button>
+            <p class="error"></p>
+        </div>
+        <div class="app_bottom">
+            <h2 class="city_name"></h2>
+            <div class="box">
+                <div class="weather_box">
+                    <img src="" alt="">
+                    <p class="temperature"></p>
+                </div>
+                <p class="weather_description"></p>
+            </div>
+            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+            <p>Zachmurzenie: <span class="clouds"></span></p>
+            <p>Wilgotność: <span class="humidity"></span></p>
+            <p>Ciśnienie: <span class="press"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>Projekt WSB Bydgoszcz</p>
+    </footer>
     
+    <script src="main.js"></script>
 </body>
+
 </html>
