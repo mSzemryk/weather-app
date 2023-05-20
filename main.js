@@ -28,12 +28,30 @@ getWeather = () =>{
         temperature.textContent = `${response.data.main.temp} C`;
         weatherDesc.textContent = `${response.data.weather[0].description}`
         feelsLike.textContent = `${response.data.main.feels_like} C`;
-        windSpeed.textContent = `${response.data.wind.speed} km/h`;
+        windSpeed.textContent = `${response.data.wind.speed} m/s`;
         clouds.textContent = `${response.data.clouds.all} %`;
         humidity.textContent = `${response.data.main.humidity} %`;
         press.textContent = `${response.data.main.pressure} hPa`;
-    }).catch().finally();
+        errorMsg.textContent = '';
+    }).catch(error =>{
+        console.log(error);
+        if(error.response.data.cod !='200' ) {
+        errorMsg.textContent = `${error.response.data.message}`;
+        }
+        [clouds, windSpeed, humidity, press, feelsLike,temperature, weatherDesc,cityName].forEach(el => {
+            el.textContent = '';
+        })
+        img.src = '';
+    }).finally(() => {
+        input.value = '';
+    });
    
+    
 }
-
+const getWeatherByEnter = (e) =>{
+    if(e.key === 'Enter'){
+           getWeather();
+    }
+}
+input.addEventListener('keydown', getWeatherByEnter);
 button.addEventListener('click',getWeather);
