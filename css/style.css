@@ -36,38 +36,43 @@ main {
 }
 input {
 	width: 60%;
-border:none;
-height: 5vh;
-padding:5px;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
+	border: none;
+	height: 5vh;
+	padding: 5px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 button {
 	width: 30%;
-	border:none;
+	border: none;
 	background-color: lightblue;
 	border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
-.error{
-	padding-top:15px;
-	color:white;
+.error {
+	padding-top: 15px;
+	color: white;
 }
 
-.app_bottom{
+.app_bottom {
 	height: 60vh;
-	background: rgb(180,242,244);
-	font-size:0.9em;
-background: linear-gradient(90deg, rgba(180,242,244,1) 0%, rgba(186,221,222,1) 46%, rgba(191,244,246,1) 100%);
-	border-radius:50px;
-	margin:25px;
-	padding:25px;
+	background: rgb(180, 242, 244);
+	font-size: 0.9em;
+	background: linear-gradient(
+		90deg,
+		rgba(180, 242, 244, 1) 0%,
+		rgba(186, 221, 222, 1) 46%,
+		rgba(191, 244, 246, 1) 100%
+	);
+	border-radius: 50px;
+	margin: 25px;
+	padding: 25px;
 }
-.app_bottom p{
-	padding:10px 20px;
+.app_bottom p {
+	padding: 10px 20px;
 }
-.weather_box{
-	display:flex;
+.weather_box {
+	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
