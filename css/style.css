@@ -13,9 +13,30 @@ body {
 	background: linear-gradient(90deg, rgba(99, 212, 217, 1) 0%, rgba(73, 146, 213, 1) 50%, rgba(0, 212, 255, 1) 100%);
 }
 header {
-	width: 35vw;
-	height: 10vh;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+header h1 {
+	padding: 40px 25px;
 	color: white;
-	text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.747);
+}
+header img {
+	width: 30vw;
+}
+main {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+.app_top {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+input {
+	width: 60%;
+}
+button {
+	width: 30%;
 }
