@@ -1,0 +1,16 @@
+header h1{
+    padding-top:15vh;
+}
+.app_bottom{
+    height: 50vh;
+}
+.app_bottom h2{
+    font-size:3em;
+}
+.box p{
+    font-size:1.5em;
+}
+.weather_box p{
+    font-size:2em;
+    padding-top:10vh;
+}

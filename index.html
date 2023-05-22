@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/medium.css" />
+    <link rel="stylesheet" media="screen and (min-width:992px)" href="./css/large.css" />
     <link rel="shortcut icon" href="./img/summer-icon.png" type="image/x-icon">
     <title>Weather App</title>
 </head>
@@ -25,17 +27,21 @@
         <div class="app_bottom">
             <h2 class="city_name"></h2>
             <div class="box">
+                <p class="weather_description"></p>
                 <div class="weather_box">
+
                     <img src="" class="weather_icon" alt="">
                     <p class="temperature"></p>
                 </div>
-                <p class="weather_description"></p>
+
             </div>
-            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
-            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
-            <p>Zachmurzenie: <span class="clouds"></span></p>
-            <p>Wilgotność: <span class="humidity"></span></p>
-            <p>Ciśnienie: <span class="press"></span></p>
+            <div class="weather_info">
+                <p><i class="fa-solid fa-temperature-three-quarters"></i> <span class="span_font feels_like">Odczuwalna temperatura</span></p>
+                <p><i class="fa-solid fa-wind"></i> <span class="span_font wind_speed">Prędkość wiatru</span></p>
+                <p><i class="fa-solid fa-cloud-sun"></i> <span class="span_font clouds">Zachmurzenie</span></p>
+                <p><i class="fa-solid fa-water"></i> <span class="span_font humidity">Wilgotność</span></p>
+                <p><i class="fa-solid fa-compress"></i> <span class="span_font press">Ciśnienie</span></p>
+            </div>
         </div>
     </main>
     <footer>
@@ -43,6 +49,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/63d64969b8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -55,24 +55,52 @@ button {
 }
 
 .app_bottom {
-	height: 60vh;
+	height: 50vh;
 	background: rgb(180, 242, 244);
 	font-size: 0.9em;
-	background: linear-gradient(
-		90deg,
-		rgba(180, 242, 244, 1) 0%,
-		rgba(186, 221, 222, 1) 46%,
-		rgba(191, 244, 246, 1) 100%
-	);
+	background-color: rgba(255, 255, 255, 0.384);
 	border-radius: 50px;
 	margin: 25px;
-	padding: 25px;
+	padding: 15px;
 }
-.app_bottom p {
-	padding: 10px 20px;
+.app_bottom h2{
+	text-align: center;
 }
-.weather_box {
-	display: flex;
+.box{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.weather_box{
+	display:flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	padding:5px 20px;
+	justify-content: space-around;
+}
+.weather_icon{
+	width:22vw;
+}
+.weather_box p{
+	font-size:1.5em;
+	padding-top:30px;
+}
+.app_bottom i{
+	font-size:1.5em;
+	color:rgb(0, 0, 0)
+
+}
+.span_font{
+	font-size: 1.2em;;
+}
+.weather_info{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	
+	margin-top:5vh;
+}
+.weather_info p{
+	margin:10px;
+	padding:5px;
+	
 }
