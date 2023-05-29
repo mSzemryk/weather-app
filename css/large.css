@@ -1,0 +1,48 @@
+
+body{
+    width:80vw;
+    margin:auto;
+
+}
+header{
+    display:flex;
+    width:40vw;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
+header h1{
+    font-size:5em;
+    padding:20px;
+}
+header img{
+    width:15vw;
+}
+main{
+    width:40vw;
+}
+.app_top{
+    margin:10%;
+}
+input{
+    
+}
+.weather_box img{
+    width:8vw;
+}
+
+.app_bottom{
+    height: 40vh;
+   
+}
+.weather_info{
+    display:flex;
+    flex-wrap: wrap;
+}
+.weather_info i{
+    font-size:3em;
+     
+}
+.weather_info p{
+
+}
