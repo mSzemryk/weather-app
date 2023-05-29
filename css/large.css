@@ -24,16 +24,13 @@ main{
 .app_top{
     margin:10%;
 }
-input{
-    
-}
+
 .weather_box img{
     width:8vw;
 }
 
 .app_bottom{
     height: 40vh;
-   
 }
 .weather_info{
     display:flex;
