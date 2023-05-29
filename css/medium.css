@@ -1,16 +1,33 @@
-header h1{
-    padding-top:15vh;
+header h1 {
+	padding-top: 15vh;
 }
-.app_bottom{
-    height: 50vh;
+main {
+	position: relative;
 }
-.app_bottom h2{
-    font-size:3em;
+.app_top {
+	display: flex;
 }
-.box p{
-    font-size:1.5em;
+.app_top p {
+	position: absolute;
+	top: 30px;
 }
-.weather_box p{
+.app_bottom {
+	height: 50vh;
+}
+.app_bottom h2 {
+	font-size: 2.2em;
+}
+.box p {
+	font-size: 1.5em;
+}
+
+.weather_box p {
+	font-size: 2em;
+	padding-top: 10vh;
+}
+.weather_info{
+    margin-top:2vh;
+}
+.weather_info i{
     font-size:2em;
-    padding-top:10vh;
 }
