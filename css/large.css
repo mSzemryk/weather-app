@@ -28,15 +28,13 @@ main{
 .weather_box img{
     width:8vw;
 }
-
+.error{
+    margin-top:10vh;
+}
 .app_bottom{
-    height: 40vh;
+    height: 45vh;
 }
 .weather_info{
     display:flex;
-    flex-wrap: wrap;
-}
-.weather_info i{
-    font-size:3em;
-     
+ 
 }
