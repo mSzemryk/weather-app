@@ -33,9 +33,11 @@ getWeather = () =>{
         humidity.textContent = `${response.data.main.humidity} %`;
         press.textContent = `${response.data.main.pressure} hPa`;
         errorMsg.textContent = '';
+        document.querySelector('.app_bottom').classList.add('app_bottom_active');
     }).catch(error =>{
         console.log(error);
         if(error.response.data.cod !='200' ) {
+            document.querySelector('.app_bottom').classList.remove('app_bottom_active');
         errorMsg.textContent = `${error.response.data.message}`;
         }
         [clouds, windSpeed, humidity, press, feelsLike,temperature, weatherDesc,cityName].forEach(el => {
@@ -53,5 +55,7 @@ const getWeatherByEnter = (e) =>{
            getWeather();
     }
 }
+
 input.addEventListener('keydown', getWeatherByEnter);
 button.addEventListener('click',getWeather);
+button.addEventListener('click',showWeatherBox);
